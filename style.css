@@ -93,17 +93,18 @@ footer a {
 
 .bio-section {
     display: flex;
+    flex-direction: column;
 }
 
 .container2 {
-    height: 568px;
-    width: 33%;
+    height: 150px;
+    width: 100%;
     background: grey;
     display: flex;
 }
 .container3 {
-    height: 568px;
-    width: 67%;
+    height: 200px;
+    width: 100%;
     background: lightgrey;
     display: flex;
     align-items: center;
@@ -172,9 +173,11 @@ footer a {
     }
     .container2 {
         height: 725px;
+        width: 33%;
     }
     .container3 {
         height: 725px;
+        width: 67%;
     }
     
     .resume-container {
@@ -193,6 +196,11 @@ footer a {
         height: 200px;
         width: 200px;
     }
+
+    .bio-section {
+        flex-direction: row;
+    }    
+
 }
 
 @media only screen and (min-width: 350px) and (max-width: 399px) {
